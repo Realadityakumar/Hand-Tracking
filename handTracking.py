@@ -25,16 +25,7 @@ while True :
                             #this is to find img pexels, here x is co ordinate which is mulitplied width of image 
                 print(id, cx,cy)
                 if id == 4:
-                  cv.putText(img, 'thumb', (cx, cy), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 123, 255), 2)
-                if id == 8:
-                  cv.putText(img, 'Index', (cx, cy), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 123, 255), 2)
-                if id == 12:
-                  cv.putText(img, 'Mid', (cx, cy), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 123, 255), 2)
-                if id == 16:
-                  cv.putText(img, 'Ring', (cx, cy), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 123, 255), 2)
-                if id == 20:
-                  cv.putText(img, 'Little', (cx, cy), cv.FONT_HERSHEY_SIMPLEX, 1, (255, 123, 255), 2)
-
+                    cv.circle(img,(cx,cy),50,(255,123,255),cv.FILLED)
             mpDraw.draw_landmarks(img, handLms, mphands.HAND_CONNECTIONS)
 
     # ctime = time.time()
